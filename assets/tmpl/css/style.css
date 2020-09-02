@@ -452,11 +452,7 @@ body {
     height: 100vh;
   }
   .navbar.bg-white {
-    position: fixed;
-    width: 100vw;
-    left: 0;
     height: 45px;
-    z-index: 999;
     border-bottom: 0.8px solid #B1B1B1;
   }
   .navigation .menu li {
@@ -470,7 +466,8 @@ body {
     margin-right: 0;
   }
   .nav-link {
-    padding: 0 .5rem;
+    padding: 0 .5rem 0 0;
+    color: #505050;
   }
   .navbar-nav {
     height: 100vh;
