@@ -11,6 +11,15 @@ body {
 body {
   cursor: url('../../../images/cursor.svg') 26px 26px;
 }
+.bkg-contact-us-block {
+  background: rgba(221, 221, 221, 0.5);
+}
+.contact-us, .contact-us a {
+  height: 24px;
+  font-size: 11px;
+  line-height: 13px;
+  color: rgba(0, 0, 0, 0.8);
+}
 .navigation {
   border-bottom: 0.8px solid #B1B1B1;
 }
@@ -433,6 +442,10 @@ body {
   color: #505050;
 }
 @media (min-width: 280px) and (max-width: 750px) {
+  .contact-us, .contact-us a {
+    text-decoration: underline;
+    color: #174EE2;
+  }
   .navigation {
     height: 45px;
   }
