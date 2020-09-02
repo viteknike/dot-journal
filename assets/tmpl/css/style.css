@@ -127,8 +127,11 @@ body {
 .nav-block .subtitle {
   margin-bottom: 40px;
 }
-.nav-block .title {
+.nav-block.home .title {
   padding-top: 70px;
+}
+.nav-block .title {
+  padding-top: 20px;
 }
 .owl-carousel .owl-nav button.owl-prev img {
   width: 40px;
@@ -450,6 +453,78 @@ body {
 .owl-carousel.heading .item a {
   color: #505050;
 }
+.dot-journal-body .item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #505050;
+  margin-bottom: 30px;
+}
+.dot-journal-body .item .title {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.dot-journal-body .down-shadow::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  bottom: 3rem;
+}
+.dot-journal-body .journal-img {
+  padding-top: 1rem;
+}
+.dot-journal-body .journal-img img {
+  width: 100%;
+  padding-left: 5rem;
+}
+.dot-journal-body .journal-block .hashtag-block {
+  padding-left: 6rem;
+  margin-top: 2.5rem;
+}
+.dot-journal-body .journal-block .hashtag-block .hashtag-link {
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  line-height: 12px;
+  color: #454545;
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: 1px solid #BEBCBC;
+  display: inline-block;
+}
+.archive-block .items-archive-block {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-top: 65px;
+}
+.archive-block .item-archive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.archive-block .item-archive img {
+  width: 200px;
+  box-shadow: 0px 0px 15px rgba(80, 80, 80, 0.25);
+}
+.archive-block .pagination-block {
+  color: #505050;
+  font-weight: 500;
+  font-size: 16px;
+}
+.archive-block .pagination-block .pagination {
+  background: transparent;
+  border: none;
+  padding: 0 10px;
+}
+.archive-block .pagination-block .pagination:last-child {
+  padding-left: 0;
+}
 @media (min-width: 280px) and (max-width: 750px) {
   .contact-us, .contact-us a {
     text-decoration: underline;
@@ -602,6 +677,9 @@ body {
   .owl-carousel.heading .heading-subtitle {
     text-align: center;
   }
+  .owl-carousel.heading .item {
+    margin-top: 40px!important;
+  }
   .owl-carousel.heading .item .show-more-news {
     display: none;
   }
@@ -680,6 +758,41 @@ body {
     margin-top: 0;
     padding: 0.2rem 0.5rem;
     right: 3rem;
+  }
+  .dot-journal-body .journal-block .hashtag-block {
+    padding-left: 2rem;
+  }
+  .dot-journal-body .journal-img {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .dot-journal-body .journal-img .hashtag-block {
+    padding-right: 2rem;
+    text-align: left;
+  }
+  .dot-journal-body .journal-block .hashtag-block .hashtag-link {
+    font-size: 18px;
+  }
+  .dot-journal-body .journal-img img {
+    width: 90%;
+    padding-left: 0;
+  }
+  .dot-journal-body .journal-block .down-shadow .item:first-child {
+    padding-bottom: 20px!important;
+  }
+  .dot-journal-body .down-shadow::after {
+    display: none;
+  }
+  .nav-block.journal-number .title {
+    font-size: 23.5px;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 50px;
+  }
+  .dot-journal-body {
+    margin-top: 40px;
+  }
+  .dot-journal-body .title-block {
+    margin-bottom: 40px;
   }
 }
 
