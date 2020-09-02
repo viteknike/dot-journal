@@ -11,6 +11,15 @@ body {
 body {
   cursor: url('../../../images/cursor.svg') 26px 26px;
 }
+.advertising-banner {
+  background: #C4C4C4;
+  font-weight: bold;
+  font-size: 38px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.advertising-banner .container {
+  height: 150px;
+}
 .bkg-contact-us-block {
   background: rgba(221, 221, 221, 0.5);
 }
