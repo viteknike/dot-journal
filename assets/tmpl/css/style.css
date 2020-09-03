@@ -69,9 +69,8 @@ body {
   background: #E0E0E0;
 }
 .block-position {
-  margin-top: 25px;
-  margin-bottom: 25px;
-
+  margin-top: 28px;
+  margin-bottom: 4px;
 }
 .block-position, .block-position a {
   font-size: 14px;
@@ -97,6 +96,9 @@ body {
 .nav-block .owl-carousel .owl-item img {
   display: block;
   width: 810px;
+}
+.nav-block.journal-number {
+  height: 250px;
 }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
   background: #bcbcbc;
@@ -382,9 +384,6 @@ body {
 }
 .footer-block .footer-body .col.end ul.contacts {
   margin-bottom: 2px;
-}
-.footer-block .footer-body .col ul.contacts li:first-child {
-  margin-bottom: .3rem;
 }
 .footer-block .footer-body .col ul.contacts li:last-child {
   margin-bottom: 1rem;
