@@ -18,7 +18,6 @@
     });
     $('.owl-carousel.journal').owlCarousel({
         loop:true,
-        margin:0,
         nav:true,
         navText : ['<img src="images/left.png" alt="">','<img src="images/right.png" alt="">'],
         dots:false,
@@ -39,7 +38,7 @@
     });
     $('.owl-carousel.heading').owlCarousel({
         loop:true,
-        margin:20,
+        margin:34,
         nav:true,
         navText : ['<img src="images/left.png" alt="">','<img src="images/right.png" alt="">'],
         responsive:{
