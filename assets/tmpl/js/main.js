@@ -17,7 +17,7 @@
         }
     });
     $('.owl-carousel.journal').owlCarousel({
-        loop:true,
+        loop:false,
         nav:true,
         navText : ['<img src="images/left.png" alt="">','<img src="images/right.png" alt="">'],
         dots:false,
@@ -28,7 +28,6 @@
                 dots:true,
                 nav:false,
                 stagePadding: 50,
-                loop: false
             },
             600:{
                 items:4,

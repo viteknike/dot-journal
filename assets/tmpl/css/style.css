@@ -850,6 +850,9 @@ body {
     position: relative;
     z-index: 999;
   }
+  .owl-carousel.heading.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0;
+  }
   .news-block .title-block {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -979,7 +982,7 @@ body {
   
   .footer-block a.scroll-up {
     margin-top: 0;
-    padding: 0.2rem 0.5rem;
+    padding: 0 0.55rem;
     right: 3rem;
   }
   .dot-journal-body .journal-block .hashtag-block {
