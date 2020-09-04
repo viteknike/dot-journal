@@ -23,7 +23,7 @@
         dots:false,
         responsive:{
             0:{
-                margin:15,
+                margin:16,
                 items:1,
                 dots:true,
                 nav:false,

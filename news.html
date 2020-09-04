@@ -108,10 +108,10 @@
   <div class="news-body">
     <div class="container select-period">
       <div class="row">
-        <div class="col-md-6 text-right">
-          <div class="dropdown show">
+        <div class="col-md-6 text-left text-md-right">
+          <div class="dropdown show period">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Показать мероприятия за период
+              Показать новости за период
             </a>
           
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -120,14 +120,65 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 d-flex align-items-center pl-5">
+        <div class="col-md-4 col-6 d-flex align-items-center">
           Показано 1-7 из 20
+        </div>
+        <div class="d-flex align-items-center d-md-none col-6 news-hashtag">
+          <div class="search">
+            <input type="text" placeholder="Искать в новостях">
+            <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-12 padding-select">
+          
+        </div>
+        <div class="col-6 d-md-none text-right">
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuHeading" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Рубрики
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuHeading">
+              <a class="dropdown-item" href="#">Fashion (5)</a>
+              <a class="dropdown-item" href="#">Food (5)</a>
+              <a class="dropdown-item" href="#">Interviews (5)</a>
+              <a class="dropdown-item" href="#">Lifestyle (5)</a>
+              <a class="dropdown-item" href="#">Personal (5)</a>
+              <a class="dropdown-item" href="#">Photo (3)</a>
+              <a class="dropdown-item" href="#">Travel (5)</a>
+              <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-md-none text-center">
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuHashtag" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Теги
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuHashtag">
+              <a class="dropdown-item" href="#">Статьи</a>
+              <a class="dropdown-item" href="#">Новости</a>
+              <a class="dropdown-item" href="#">Авторы</a>
+              <a class="dropdown-item" href="#">Food</a>
+              <a class="dropdown-item" href="#">Контакты</a>
+              <a class="dropdown-item" href="#">Мероприятия</a>
+              <a class="dropdown-item" href="#">О нас</a>
+              <a class="dropdown-item" href="#">Партнеры</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="container news-page-block">
       <div class="row">
-        <div class="order-2 order-md-1 col-md-7 down-shadow">
+        <div class="col-md-8 down-shadow">
           <div class="item">
             <div class="d-flex">
               <div class="">
@@ -234,7 +285,7 @@
             </div>
           </div>
         </div>
-        <div class="order-1 order-md-2 offset-md-1 col-md-4 news-hashtag" style="padding-left: 4rem;">
+        <div class="d-none d-md-block col-md-4 news-hashtag" style="padding-left: 4rem;">
           <div class="search">
             <input type="text" placeholder="Искать в новостях">
             <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -306,21 +357,37 @@
         </div>
       </div>
     </div>
-    <div class="container pagination-block">
+  </div>
+  <div class="container pagination-block">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-end justify-content-md-start">
+        <button class="pagination">
+          1
+        </button>
+        <button class="pagination">
+          2
+        </button>
+        <button class="pagination">
+          3
+        </button>
+        <button class="pagination d-flex align-items-center">
+          Следующая <img src="images/arrow-right.png" width="20px" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="background-message d-md-none">
+    <div class="container message-block">
       <div class="row">
-        <div class="col-md-12 d-flex">
-          <button class="pagination">
-            1
-          </button>
-          <button class="pagination">
-            2
-          </button>
-          <button class="pagination">
-            3
-          </button>
-          <button class="pagination d-flex align-items-center">
-            Следующая <img src="images/arrow-right.png" width="20px" alt="">
-          </button>
+        <div class="col-md-12 message-content">
+          <div class="send-message d-flex">
+            <div class="message-title">Письмо в редакцию</div>
+            <a class="d-none d-md-block" href="#">Написать</a>
+            <a class="d-flex d-md-none align-items-center" href="#">
+              <i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
+              <div>Отправить</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

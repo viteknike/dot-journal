@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -36,8 +36,6 @@ body {
 }
 .navigation {
   border-bottom: 0.8px solid #B1B1B1;
-}
-.navbar-brand {
 }
 .nav-link {
   padding: 0 1rem;
@@ -97,7 +95,7 @@ body {
   display: block;
   width: 810px;
 }
-.nav-block.journal-number {
+.nav-block {
   height: 250px;
 }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
@@ -173,8 +171,9 @@ body {
   margin-bottom: 50px;
 }
 .title-block .title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 38px;
+  letter-spacing: 0.4px;
   color: rgba(0, 0, 0, 0.8);
 }
 .title-block .title::before {
@@ -271,7 +270,7 @@ body {
   line-height: 1.45;
 }
 .journal-block, .news-block {
-  margin-bottom: 89px;
+  margin-bottom: 46px;
   margin-top: 2.8rem;
 }
 .heading-block {
@@ -517,14 +516,21 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.2px;
   color: #505050;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+.dot-journal-body .journal-block .down-shadow {
+  margin-top: 4.4rem;
+}
+.dot-journal-body .journal-block .down-shadow .show-more-news {
+  margin-top: 4.1rem;
 }
 .dot-journal-body .item .title {
   font-size: 19px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
 }
 .dot-journal-body .down-shadow::after {
   content: "";
@@ -532,10 +538,10 @@ body {
   width: 100%;
   height: 100px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-  bottom: 3rem;
+  bottom: 6rem;
 }
 .dot-journal-body .journal-img {
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 .dot-journal-body .journal-img img {
   width: 100%;
@@ -543,18 +549,20 @@ body {
 }
 .dot-journal-body .journal-block .hashtag-block {
   padding-left: 6rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 .dot-journal-body .journal-block .hashtag-block .hashtag-link, .news-body .news-page-block .hashtag-block .hashtag-link {
   font-weight: 600;
-  font-size: 13px;
-  margin-top: 10px;
+  font-size: 11px;
+  margin-top: 9px;
   line-height: 10px;
   color: #454545;
   padding: 0.6rem 1rem;
+  text-transform: uppercase;
   border-radius: 30px;
   border: 1px solid #BEBCBC;
   display: inline-block;
+  letter-spacing: -0.6px;
 }
 .archive-block .items-archive-block {
   padding-left: 2.5rem;
@@ -565,7 +573,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .archive-block .item-archive img {
   width: 200px;
@@ -575,12 +583,16 @@ body {
   color: #505050;
   font-weight: 500;
   font-size: 16px;
+  margin-top: 2px;
   margin-bottom: 100px;
 }
 .pagination-block .pagination {
   background: transparent;
   border: none;
-  padding: 0 10px;
+  padding: 0 9px;
+}
+.pagination-block .pagination:last-child {
+  padding-left: 0;
 }
 .pagination-block .pagination:hover {
   color: #174EE2;
@@ -590,10 +602,7 @@ body {
   margin-top: 40px;
 }
 .pagination-block .pagination:first-child {
-  padding-left: 0;
-}
-.archive-block .pagination-block .pagination:last-child {
-  padding-left: 0;
+  padding-left: 5px;
 }
 .journal-number-description .title  {
   margin-bottom: 122px;
@@ -604,8 +613,7 @@ body {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 11rem!important;
-  right: 8rem!important;
+  left: 8rem!important;
   color: rgba(0, 0, 0, 0.8);
   min-width: 7rem;
 }
@@ -636,8 +644,14 @@ body {
 }
 .news-page-block .item {
   border-bottom: 1px solid #EDEDED;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2.5rem;
+  padding-right: 1.5rem;
+}
+.news-page-block {
+  margin-bottom: 40px;
+}
+.news-body .down-shadow {
+  padding-right: 3.5rem;
 }
 .news-page-block .item .title-news {
   font-size: 22px;
@@ -720,6 +734,7 @@ body {
   padding-right: 2.5rem;
   font-size: 10px;
   padding-top: 1.5rem;
+  font-weight: 600;
   padding-bottom: 1.5rem;
   margin-top: 2rem;
 }
@@ -804,6 +819,9 @@ body {
     justify-content: center;
     border-bottom: 0.5px solid #D8D8D8;
   }
+  .nav-block {
+    height: 130px;
+  }
   .nav-block .owl-carousel .owl-item img, .nav-block .owl-carousel .owl-item a, .nav-block .owl-carousel .item .block .subtitle {
     display: none;
   }
@@ -837,6 +855,13 @@ body {
   }
   .nav-block .title, .nav-block.home .title {
     padding-top: 0;
+  }
+  .owl-carousel.journal {
+    margin-top: 30px;
+  }
+  .owl-carousel.journal .item {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .owl-theme .owl-dots .owl-dot span {
     width: 18px;
@@ -889,10 +914,16 @@ body {
   .journal-block, .news-block, .heading-block, .announc-block {
     margin-bottom: 60px;
   }
+  .journal-block {
+    margin-bottom: 40px;
+  }
   
   .journal-block .show-more-news {
     margin-top: 30px;
     text-align: center;
+  }
+  .owl-carousel.journal .item img {
+    box-shadow: 0 0 15px rgba(80, 80, 80, 0.25);
   }
   .owl-carousel.heading {
     padding: 0;
@@ -986,19 +1017,29 @@ body {
     padding: 0 0.55rem;
     right: 3rem;
   }
+  .journal-block, .news-block {
+    margin-top: 40px;
+  }
+  .dot-journal-body .journal-block .down-shadow {
+    margin-top: 0;
+  }
+  .dot-journal-body .journal-img {
+    padding-top: 0;
+  }
+  .dot-journal-body .journal-block .hashtag-block .hashtag-link, .news-body .news-page-block .hashtag-block .hashtag-link {
+    font-size: 10px;
+    padding: 0.6rem 1rem;
+  }
   .dot-journal-body .journal-block .hashtag-block {
-    padding-left: 2rem;
+    padding-left: 3.5rem;
   }
   .dot-journal-body .journal-img {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
   .dot-journal-body .journal-img .hashtag-block {
-    padding-right: 2rem;
+    padding-right: 4rem;
     text-align: left;
-  }
-  .dot-journal-body .journal-block .hashtag-block .hashtag-link {
-    font-size: 18px;
   }
   .dot-journal-body .journal-img img {
     width: 90%;
@@ -1028,6 +1069,63 @@ body {
   .advertising-banner .container {
     height: 100px;
     font-size: 28px;
+  }
+  .message-block {
+    height: 150px;
+  }
+  .message-block .message-content {
+    height: 150px;
+  }
+  .news-hashtag .search {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    line-height: 0;
+  }
+  .news-hashtag .search input::placeholder {
+    text-align: center;
+    font-size: 13px;
+  }
+  .news-hashtag .search input {
+    width: 100%;
+    border-bottom: 1.3px solid rgba(0, 0, 0, 0.4)
+  }
+  .select-period .dropdown-toggle {
+    padding-left: 0;
+  }
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -2rem!important;
+    color: rgba(0, 0, 0, 0.8);
+    min-width: 10rem;
+  }
+  .dropdown #dropdownMenuHeading.dropdown-toggle::before, .dropdown #dropdownMenuHashtag.dropdown-toggle::before {
+    display: none;
+  }
+  .dropdown #dropdownMenuLink + .dropdown-menu {
+    left: 7rem!important;
+    min-width: 7rem;
+  }
+  .news-page-block .item {
+    border-bottom: 1px solid #EDEDED;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .select-period .dropdown.period {
+    margin-bottom: 40px;
+  }
+  .padding-select {
+    height: 40px;
+  }
+  .news-page-block .item .title-news {
+    font-size: 19px;
+  }
+  .news-page-block .item .date {
+    font-size: 13px;
+  }
+  .pagination-block {
+    margin-bottom: 0;
   }
 }
 
