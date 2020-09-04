@@ -98,6 +98,9 @@ body {
 .nav-block {
   height: 250px;
 }
+.nav-block.home {
+  height: 100%;
+}
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
   background: #bcbcbc;
   border-radius: 30px;
@@ -598,6 +601,9 @@ body {
   color: #174EE2;
   text-decoration: underline;
 }
+.news-body .select-period .dropdown.period {
+  padding-right: 2.7rem;
+}
 .news-body .pagination-block .pagination {
   margin-top: 40px;
 }
@@ -626,8 +632,8 @@ body {
   bottom: 8px;
 }
 .select-period {
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 43px;
+  margin-bottom: 3px;
 }
 .select-period, .select-period .btn {
   color: #000;
@@ -644,7 +650,7 @@ body {
 }
 .news-page-block .item {
   border-bottom: 1px solid #EDEDED;
-  padding-left: 2.5rem;
+  padding-left: 2rem;
   padding-right: 1.5rem;
 }
 .news-page-block {
@@ -656,15 +662,18 @@ body {
 .news-page-block .item .title-news {
   font-size: 22px;
   color: #000;
+  margin-bottom: 0;
   margin-top: 20px;
 }
 .news-page-block .item .description-news {
   font-size: 15px;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 .news-page-block .item .date {
   color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 20px;
+  font-size: 11px;
+  margin-bottom: 23px;
+  line-height: 1.2;
 }
 .news-page-block .item .date span, .announc-block .date-announc span {
   font-size: 30px;
@@ -681,7 +690,13 @@ body {
   width: 19px;
   height: 1px;
   background: #f00;
-  bottom: 5px;
+  bottom: 3px;
+}
+.news-hashtag .subscribe-form .privacy-policy {
+  font-weight: 600;
+  font-size: 10.5px;  
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
 }
 .news-hashtag .subscribe-form .title::before {
   display: none;
@@ -690,28 +705,34 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1.3px solid rgba(0, 0, 0, 0.4);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.6rem;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
-.news-hashtag .choise-heading ul li:first-child, .news-hashtag .hashtag-block {
-  margin-top: 15px;
+.news-hashtag .choise-heading ul li:first-child {
+  margin-top: 9px;
+}
+.news-hashtag .hashtag-block {
+  margin-top: 3px;
 }
 .news-hashtag .hashtag-block {
   margin-left: 1rem;
 }
 .news-hashtag .choise-heading ul li:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .news-hashtag .choise-heading ul li {
   list-style-type: none;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 .news-hashtag .choise-heading ul li a {
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
   color: #353535;
+}
+.news-body .search .nav-link {
+  padding: 0 0.5rem 0 0;
 }
 .news-hashtag .search a {
   color: #000;
@@ -727,16 +748,16 @@ body {
 }
 .news-page-block .news-hashtag .subscribe-form {
   text-align: center;
-  margin-right: 3rem;
-  padding-left: 2.5rem;
+  margin-right: 2.3rem;
+  padding-left: 1.5rem;
   margin-left: 1rem;
   border: 1.5px solid rgba(63, 63, 63, 0.7);
-  padding-right: 2.5rem;
+  padding-right: 1.5rem;
   font-size: 10px;
   padding-top: 1.5rem;
   font-weight: 600;
-  padding-bottom: 1.5rem;
-  margin-top: 2rem;
+  padding-bottom: 1.2rem;
+  margin-top: 1.6rem;
 }
 .news-page-block .news-hashtag .subscribe-form input {
   font-weight: 600;
@@ -746,7 +767,7 @@ body {
   height: 35px;
   padding: 0.5rem;
   margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
   color: rgba(0, 0, 0, 0.5);
 }
 .news-page-block .news-hashtag .subscribe-form button {
@@ -754,7 +775,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   color: #FFFFFF;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 .news-page-block .news-hashtag .subscribe-form input, .news-page-block .news-hashtag .subscribe-form button {
   width: 100%;
