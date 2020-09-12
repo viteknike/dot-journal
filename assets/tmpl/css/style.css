@@ -255,6 +255,14 @@ button.navbar-toggler:hover {
   margin-bottom: 9px;
   color: #003D7C;
   letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}
+.date-news i {
+  font-size: 7px;
+  display: inline-flex;
+  align-self: center;
+  margin: 0 3px;
 }
 .description-news {
   font-weight: 400;
@@ -299,14 +307,16 @@ button.navbar-toggler:hover {
   color: #505050;
 }
 .owl-carousel.heading .item .heading-subtitle {
-  font-weight: 500;
   font-size: 14px;
   margin-bottom: 23px;
   line-height: 1.45;
 }
 .journal-block, .news-block {
-  margin-bottom: 46px;
+  margin-bottom: 88px;
   margin-top: 2.8rem;
+}
+.news-block {
+  margin-top: 0;
 }
 .new-description-body .news-block, .event-description-body .news-block {
   margin-top: 0.6rem;
@@ -359,7 +369,6 @@ button.navbar-toggler:hover {
 }
 .announc-block .items .description .subtitle-announc {
   font-size: 13px;
-  font-weight: 500;
   line-height: 21px;
   margin-bottom: 7px;
 }
@@ -378,7 +387,6 @@ button.navbar-toggler:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
   font-size: 22px;
   line-height: 27px;
   text-align: center;
@@ -564,7 +572,6 @@ button.navbar-toggler:hover {
   color: #174EE2;
 }
 .dot-journal-body .item {
-  font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.2px;
@@ -714,7 +721,7 @@ button.navbar-toggler:hover {
 .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
   box-shadow: none;
 }
-.news-page-block .item {
+.news-page-block .item, .search-results-body .results-block .item {
   border-bottom: 1px solid #EDEDED;
   padding-left: 2rem;
   padding-right: 1.5rem;
@@ -746,7 +753,7 @@ button.navbar-toggler:hover {
   width: 340px;
   height: 233px;
 } 
-.news-page-block .item .title-news, .article-page-block .item .title-news {
+.news-page-block .item .title-news, .article-page-block .item .title-news, .results-block .item .title-news {
   font-size: 22px;
   color: #000;
   margin-bottom: 0;
@@ -756,22 +763,27 @@ button.navbar-toggler:hover {
   margin-top: 16px;
   line-height: 1.2;
 }
-.news-page-block .item .description-news, .article-page-block .item .description-news {
+.news-page-block .item .description-news, .article-page-block .item .description-news, .results-block .item .description-news {
   font-size: 15px;
   margin-top: 12px;
 }
 .article-page-block .item .description-news {
   margin-top: 19px;
 }
-.news-page-block .item .date, .article-page-block .item .date {
+.news-page-block .item .date, .article-page-block .item .date, .results-block .item .date {
   color: rgba(0, 0, 0, 0.6);
   font-size: 11px;
-  margin-bottom: 23px;
+  margin-top: 1rem;
+  margin-bottom: 29px;
   line-height: 1.2;
+  display: flex;
+  align-items: center;
 }
-.news-page-block .item .date span, .announc-block .date-announc span, .article-page-block .item .date span, .activity-body .article-page-block .item .city span {
-  font-size: 30px;
-  font-weight: 600;
+.news-page-block .item .date i, .announc-block .date-announc i, .article-page-block .item .date i, .activity-body .article-page-block .item .city i, .results-block .item .date i {
+  font-size: 7px;
+  display: inline-flex;
+  align-self: center;
+  margin: 0 3px;
 }
 .new-description.nav-block .date-new {
   font-size: 14px;
@@ -817,7 +829,7 @@ button.navbar-toggler:hover {
 .news-hashtag .subscribe-form .title::before {
   display: none;
 }
-.news-hashtag .search {
+.search {
   display: flex;
   align-items: center;
   border-bottom: 1.3px solid rgba(0, 0, 0, 0.4);
@@ -846,10 +858,10 @@ button.navbar-toggler:hover {
   line-height: 16px;
   color: #353535;
 }
-.news-body .search .nav-link {
+.search .nav-link {
   padding: 0 0.5rem 0 0;
 }
-.news-hashtag .search a {
+.search a {
   color: #000;
 }
 .news-hashtag .search input::placeholder {
@@ -858,7 +870,14 @@ button.navbar-toggler:hover {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.6);
 }
-.news-hashtag .search input {
+#search::placeholder {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+  color: #605F5F;
+  padding-left: 50px;
+}
+.search input {
   border: none;
 }
 .news-page-block .news-hashtag .subscribe-form, .article-page-block .news-hashtag .subscribe-form {
@@ -1122,7 +1141,6 @@ button.navbar-toggler:hover {
   width: 100%;
   height: 29px;
   text-align: left;
-  font-weight: 500;
   font-size: 12px;
   display: flex;
   padding-left: 1.35rem;
@@ -1155,7 +1173,6 @@ button.navbar-toggler:hover {
   color: #000000;
 }
 .anounce-activity .items .description .description-announc {
-  font-weight: 500;
   font-size: 12px;
   line-height: 173%;
   letter-spacing: -0.02em;
@@ -1202,7 +1219,6 @@ button.navbar-toggler:hover {
   color: #000000;
 }
 .activity-body .article-page-block .item .description-activity {
-  font-weight: 500;
   font-size: 12px;
   line-height: 176%;
   letter-spacing: -0.02em;
@@ -1251,7 +1267,6 @@ width: 100%;
 height: 100%;
 }
 .event-description-body .event-description {
-  font-weight: 500;
   font-size: 18px;
   line-height: 250%;
   color: rgba(0, 0, 0, 0.5);
@@ -1511,6 +1526,9 @@ height: 100%;
 .about-body .contacts-block .contacts {
   padding-left: 25px;
 }
+.about-body {
+  margin-bottom: 30px;
+}
 .about-body .contacts-block .contacts div a {
   font-weight: bold;
   display: inline-flex;
@@ -1539,7 +1557,8 @@ height: 100%;
   margin-bottom: 30px;
 }
 .about-body .feedback-message .width-flex input:first-child {
-  width: 48%;
+  width: 46%;
+  margin-right: 24px;
 }
 
 .about-body .feedback-message input {
@@ -1591,7 +1610,140 @@ input[type="checkbox"]:checked + label::before {
   height: 33px;
   border: none;
 }
-
+.error-body .error-title {
+  font-size: 24px;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.error-body .img img {
+  width: 93%;
+}
+.error-body .error-desc {
+  font-size: 16px;
+  margin-top: 5px;
+  line-height: 20px;
+  color: #202020;
+}
+.error-body .search input {
+  border-bottom: 1px solid #505050;
+  width: 80%;
+}
+.error-body .search {
+  border-bottom: none;
+  margin-bottom: 1.6rem;
+  padding-bottom: 0;
+  margin-top: 1.3rem;
+}
+.error-body .search a {
+  font-size: 20px;
+  margin-right: auto;
+  margin-left: 5px;
+}
+.error-body .arrow-down {
+  padding-left: 3rem;
+}
+.error-body .menu {
+  border-bottom: 1px solid #505050;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 100px;
+}
+.error-body .menu ul {
+  margin-bottom: 0.1rem;
+}
+.error-body .menu ul li a.nav-link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0 1.3rem;
+}
+.error-body .menu ul li:first-child a.nav-link {
+  padding-left: 0;
+}
+.error-body .menu ul li:last-child a.nav-link {
+  padding-right: 0;
+}
+.nothing-found-body, .search-results-body {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.nothing-found-body .nothing-title, .search-results-body .search-results-title {
+  font-weight: 600;
+  font-size: 21.5px;
+  line-height: 26px;
+  text-align: center;
+  color: #434343;
+  margin-bottom: 2.5rem;
+}
+.search-results-body .search-results-title {
+  margin-bottom: 2rem;
+}
+.nothing-found-body ul {
+  padding-left: 4rem;
+  margin-bottom: 2.8rem;
+}
+.nothing-found-body ul li {
+  list-style-type: disc;
+  color: #808080;
+}
+.nothing-found-body ul li span {
+  font-size: 17px;
+  line-height: 21px;
+  color: #434343;
+}
+.nothing-found-body .search {
+  padding-bottom: 0.1rem;
+  margin-bottom: 0;
+  margin: auto;
+  display: flex;
+  width: 90%;
+  align-items: flex-end;
+}
+.nothing-found-body .search a i {
+  font-size: 31px;
+}
+.search-results-body .search-results-title i {
+  margin-right: auto;
+  position: absolute;
+  left: 3.7rem;
+}
+.padding-x {
+  padding-left: 2.4rem;
+}
+.search-results-body ul li {
+  margin-left: 3rem;
+}
+.search-results-body ul li:first-child {
+  margin-left: 2rem;
+}
+.search-results-body .results-block .item {
+  padding-left: 1.6rem;
+  margin-left: 3.6rem;
+  padding-right: 3rem;
+}
+.results-block {
+  margin-top: 47px;
+}
+.results-block .item .description-news {
+  font-size: 14.9px;
+}
+.search-results-body .pagination-block {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+.search-results-body .padding-pagination {
+  padding-left: 6rem;
+}
+@media (min-width: 319px) and (max-width: 413px) {
+  .new-block::before {
+    height: 9.5rem!important;
+  }
+}
 @media (min-width: 280px) and (max-width: 750px) {
   .contact-us, .contact-us a {
     text-decoration: underline;
@@ -2062,7 +2214,6 @@ input[type="checkbox"]:checked + label::before {
     font-size: 15px;
   }
   .event-description-body .event-description {
-    font-weight: 500;
     font-size: 17px;
     line-height: 250%;
     text-align: center;
@@ -2145,7 +2296,7 @@ input[type="checkbox"]:checked + label::before {
   .about-body {
     margin-top: 40px;
   }
-  .title-block {
+  .about-body .partner-carousel-block .title-block {
     margin-bottom: 40px;
     margin-top: 60px;
   }
@@ -2209,6 +2360,60 @@ input[type="checkbox"]:checked + label::before {
     font-size: 11px;
     line-height: 100%;
     margin-top: 20px;
+  }
+  .error-body {
+    padding-bottom: 60px;
+  }
+  .error-body .error-title {
+    margin-top: 40px;
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 40px;
+  }
+  .error-body .img {
+    margin-bottom: 40px;
+  }
+  .error-body .search {
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+  .error-body .search a {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 38px;
+  }
+  .error-body .search input {
+    width: 65%;
+    margin-left: 2rem;
+  }
+  .error-body .img img {
+    margin-bottom: 20px;
+  }
+  .nothing-found-body ul {
+    padding-left: 2rem;
+  }
+  .nothing-found-body ul li span {
+    font-size: 15px;
+    line-height: 18px;
+    color: #434343;
+  }
+  .search-results-body ul li {
+    margin-left: 0;
+  }
+  .search-results-body .search-results-title i {
+    left: 2.7rem;
+  }
+  .error-body, .search-results-body {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .search-results-body ul li {
+    margin-left: 0;
+  }
+  .search-results-body .results-block .item {
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
   }
 
 }

@@ -1,7 +1,7 @@
 $('.owl-carousel.nav-home').owlCarousel({
   loop: false,
   margin: 10,
-  navText: ['<img src="images/left.png" alt="">', '<img src="images/right.png" alt="">'],
+  navText: ['<img src="images/left.svg" style="width: 15px;  margin-right: 5px;" alt="">', '<img src="images/right.svg" style="width: 15px;  margin-left: 5px;" alt="">'],
   dots: false,
   responsive: {
     0: {
@@ -19,7 +19,7 @@ $('.owl-carousel.nav-home').owlCarousel({
 $('.owl-carousel.journal').owlCarousel({
   loop: false,
   nav: true,
-  navText: ['<img src="images/left.png" alt="">', '<img src="images/right.png" alt="">'],
+  navText: ['<img src="images/left.svg" style="width: 15px;  margin-right: 5px;" alt="">', '<img src="images/right.svg" style="width: 15px;  margin-left: 5px;" alt="">'],
   dots: false,
   responsive: {
     0: {
@@ -39,7 +39,7 @@ $('.owl-carousel.heading').owlCarousel({
   loop: true,
   margin: 34,
   nav: true,
-  navText: ['<img src="images/left.png" alt="">', '<img src="images/right.png" alt="">'],
+  navText: ['<img src="images/left.svg" style="width: 15px;  margin-right: 5px;" alt="">', '<img src="images/right.svg" style="width: 15px;  margin-left: 5px;" alt="">'],
   responsive: {
     0: {
       items: 1,
@@ -56,7 +56,7 @@ $('.owl-carousel.partner-carousel').owlCarousel({
   loop: true,
   margin: 34,
   nav: true,
-  navText: ['<img src="images/left.png" alt="">', '<img src="images/right.png" alt="">'],
+  navText: ['<img src="images/left.svg" style="width: 15px;  margin-right: 5px;" alt="">', '<img src="images/right.svg" style="width: 15px;  margin-left: 5px;" alt="">'],
   responsive: {
     0: {
       items: 1,
@@ -73,7 +73,7 @@ $('.owl-carousel.news').owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-  navText: ['<img src="images/left.png" alt="">', '<img src="images/right.png" alt="">'],
+  navText: ['<img src="images/left.svg" style="width: 15px;  margin-right: 5px;" alt="">', '<img src="images/right.svg" style="width: 15px;  margin-left: 5px;" alt="">'],
   dots: true,
   items: 1
 });
@@ -81,7 +81,7 @@ $('.owl-carousel.anounce').owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-  navText: ['<img src="images/left.png" alt="">', '<img src="images/right.png" alt="">'],
+  navText: ['<img src="images/left.svg" style="width: 15px;  margin-right: 5px;" alt="">', '<img src="images/right.svg" style="width: 15px;  margin-left: 5px;" alt="">'],
   dots: true,
   items: 1
 });
@@ -96,7 +96,7 @@ $('.owl-carousel.anounce-activity').owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-  navText: ['<img src="images/left.png" alt="">', '<img src="images/right.png" alt="">'],
+  navText: ['<img src="images/left.svg" alt="">', '<img src="images/right.svg" style="width: 15px;  margin-left: 5px;" alt="">'],
   dots: true,
   items: 3
 });
