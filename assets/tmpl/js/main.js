@@ -124,48 +124,10 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-$('.share').hover(function () {
-  $('.socnet-share').toggle();
-})
 $('.share').on('click', function () {
   $('.socnet-share').toggle();
+  return false;
 })
-$(function () {
-  $('#daterange').daterangepicker({
-    opens: 'left',
-    autoApply: true,
-    linkedCalendars: false,
-    opens: "center",
-    locale: {
-      "monthNames": [
-        "Январь",
-        "Февраль",
-        "Март",
-        "Апрель",
-        "Май",
-        "Июнь",
-        "Июль",
-        "Август",
-        "Сентябрь",
-        "Октябрь",
-        "Ноябрь",
-        "Декабрь"
-      ],
-      "daysOfWeek": [
-        "Вс",
-        "Пн",
-        "Вт",
-        "Ср",
-        "Чт",
-        "Пт",
-        "Сб"
-      ]
-    }
-  }, function (start, end, label) {
-    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-    $('#daterange').text('с ' + start.format('DD-MM-YYYY') + ' по ' + end.format('DD-MM-YYYY'))
-  });
-});
 $('.close').on('click', function () {
   $('#daterange').text('Дату');
   $('#dropdownMenuCity').text('Город');
@@ -176,5 +138,11 @@ $('.drop-filter .dropdown .dropdown-item').on('click', function() {
   var filter = $(this).text();
   $(this).parents('.dropdown').children('.dropdown-toggle').text(filter)
 })
+$('.scroll-up').click(function() {
+  $('html, body').animate({scrollTop: 0},500);
+  return false;
+})
+
+  
 
 

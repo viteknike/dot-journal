@@ -8,6 +8,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 15px;
+  color: #000;
 }
 :focus {
   outline: none;
@@ -60,13 +61,10 @@ button.navbar-toggler:hover {
 .nav-link {
   padding: 0 1rem;
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-item a {
   color: rgba(0,0,0,1);
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  color: rgba(0,0,0,.5);
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .active a, .navbar-light .navbar-nav .nav-item.active a {
   color: rgba(0,0,0,.5);
 }
 .navigation .menu {
@@ -95,7 +93,11 @@ button.navbar-toggler:hover {
   color: #000;
   font-weight: 400;
 }
-.block-position a.active {
+.block-position a::after {
+  content: "/";
+  margin-left: 6px;
+}
+.block-position .active {
   color: #000;
   font-weight: 600;
 }
@@ -225,6 +227,10 @@ button.navbar-toggler:hover {
   margin-bottom: 23px;
   line-height: 1.49;
 }
+.new-block a {
+  display: flex;
+  color: #505050;
+}
 .new-block::before {
   content: "";
   position: absolute;
@@ -277,9 +283,6 @@ button.navbar-toggler:hover {
 .owl-carousel.heading .show-more-news a {
   font-size: 13px;
 }
-.show-more-news a:hover {
-  text-decoration: none;
-}
 .owl-carousel.journal {
   padding: 0 3.2rem;
   margin-top: 45px;
@@ -314,6 +317,9 @@ button.navbar-toggler:hover {
 .journal-block, .news-block {
   margin-bottom: 88px;
   margin-top: 2.8rem;
+}
+.dot-journal-body .journal-block {
+  margin-bottom: 48px;
 }
 .news-block {
   margin-top: 0;
@@ -351,8 +357,10 @@ button.navbar-toggler:hover {
   margin-top: 67px;
 }
 .announc-block .items {
-  display: flex;
   margin-bottom: 36px;
+}
+.announc-block .items a {
+  display: flex;
   color: #000;
 }
 .announc-block .items img {
@@ -615,7 +623,7 @@ button.navbar-toggler:hover {
   padding-left: 5.7rem;
   margin-top: 1.5rem;
 }
-.news-page-block .hashtag-block, .article-page-block .hashtag-block, acti {
+.news-page-block .hashtag-block, .article-page-block .hashtag-block {
   padding-left: 0;
 }
 .author-description-body .hashtag-block, .partner-description-body .hashtag-block {
@@ -766,6 +774,10 @@ button.navbar-toggler:hover {
 .news-page-block .item .description-news, .article-page-block .item .description-news, .results-block .item .description-news {
   font-size: 15px;
   margin-top: 12px;
+  color: #000;
+}
+.news-page-block .item a:hover, .article-page-block .item a:hover, .results-block .item a:hover, .show-more-news a:hover, .new-description-body .news-block a:hover, .event-description-body .news-blocka:hover,.new-description-body .articles a:hover, .article-description-body .articles a:hover, .event-description-body .articles a:hover, .announc-block a:hover, .anounce-activity a:hover, .article-page-block a:hover {
+  text-decoration: none;
 }
 .article-page-block .item .description-news {
   margin-top: 19px;
@@ -933,8 +945,6 @@ button.navbar-toggler:hover {
 }
 .new-description-body .big-img, .article-description-body .big-img {
   height: 469px;
-  background: url(../images/girl.png) 100% no-repeat;
-  background-size: 100%;
 }
 .new-description-body .thoughts, .article-description-body .thoughts, .event-description-body .thoughts {
   padding-left: 6.2rem;
@@ -957,7 +967,7 @@ button.navbar-toggler:hover {
   margin-top: 1.1rem;
 }
 .new-description-body .new-hashtag-block a, .article-description-body .new-hashtag-block a, .event-description-body .new-hashtag-block a {
-  width: 100px;
+  padding: 12px 20px;
   height: 35px;
   font-weight: 600;
   font-size: 11px;
@@ -970,15 +980,6 @@ button.navbar-toggler:hover {
   align-items: center;
   justify-content: center;
   margin-right: 3px;
-}
-.new-description-body .new-hashtag-block a:nth-child(2), .article-description-body .new-hashtag-block a:nth-child(2), .event-description-body .new-hashtag-block a:nth-child(2) {
-  width: 85px;
-}
-.new-description-body .new-hashtag-block a:nth-child(3), .article-description-body .new-hashtag-block a:nth-child(3), .event-description-body .new-hashtag-block a:nth-child(3) {
-  width: 146px;
-}
-.new-description-body .new-hashtag-block a:nth-child(4), .article-description-body .new-hashtag-block a:nth-child(4), .event-description-body .new-hashtag-block a:nth-child(4) {
-  width: 108px;
 }
 .new-description-body .articles, .article-description-body .articles {
  margin-bottom: 5.5rem;
@@ -1007,6 +1008,7 @@ button.navbar-toggler:hover {
 .new-description-body .articles .description, .article-description-body .articles .description, .event-description-body .articles .description {
   font-size: 13px;
   line-height: 1.8;
+  color: #000;
 }
 .new-description-body .articles .items .show-more-news, .article-description-body .articles .items .show-more-news, .event-description-body .articles .items .show-more-news {
   margin-top: 2rem;
@@ -1015,7 +1017,7 @@ button.navbar-toggler:hover {
   justify-content: flex-end;
 }
 .new-description-body .share .socnet-share ul li a img, .article-description-body .share .socnet-share ul li a img, .event-description-body .share .socnet-share ul li a img {
-  width: 100%;
+  width: 30px;
 }
 .new-description-body .share .socnet-share ul li:last-child a, .article-description-body .share .socnet-share ul li:last-child a, .event-description-body .share .socnet-share ul li:last-child a {
   border: none;
@@ -1080,7 +1082,7 @@ button.navbar-toggler:hover {
   height: 45px;
   background: #fff;
 }
-.accordion-page .align .accordion:hover {
+.accordion-page .align .accordion:hover, .activity-body .article-page-block a:hover {
   border: none!important;
 }
 .accordion-page .align .accordion .accordion-title {
@@ -1089,7 +1091,7 @@ button.navbar-toggler:hover {
   line-height: 21px;
   color: #505050;
 }
-.accordion-page .align .panel .items .title-new {
+.accordion-page .align .panel .items .title-new, .accordion-page .align .panel .items .subtitle-new  {
   font-weight: bold;
   font-size: 19px;
   color: #000000;
@@ -1162,9 +1164,6 @@ button.navbar-toggler:hover {
 .activity-body .select-period {
   margin-top: 33px;
 }
-.anounce-activity a:hover {
-  text-decoration: none;
-}
 .anounce-activity .items .description .title-announc {
   font-weight: bold;
   font-size: 17px;
@@ -1192,9 +1191,6 @@ button.navbar-toggler:hover {
 }
 .activity-body .article-page-block .activity .title:first-child {
   margin-top: 1rem;
-}
-.activity-body .article-page-block a:hover {
-  text-decoration: none;
 }
 
 .activity-body .article-page-block .item .date-activity, .activity-body .article-page-block .item .padding .city {
@@ -1262,7 +1258,7 @@ button.navbar-toggler:hover {
 .event-description-body .big-img-event {
   height: 330px;
 }
-.event-description-body .big-img-event img {
+.event-description-body .big-img-event img, .new-description-body .big-img img, .article-description-body .big-img img {
 width: 100%;
 height: 100%;
 }
@@ -1305,7 +1301,7 @@ height: 100%;
 .authors-body .block-author .img-author img {
   width: 100%;
 }
-.authors-body .block-author .name-author, .authors-body .block-author .position-author {
+.authors-body .block-author a, .authors-body .block-author a:hover {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -1381,7 +1377,7 @@ height: 100%;
 .author-description-body .contact-author .name, .partner-description-body .contact-author .name {
   margin-top: 0.7rem;
 }
-.author-description-body .contact-author .soc-net, .partner-description-body .contact-author .soc-net .contacts-block .soc-net {
+.author-description-body .contact-author .soc-net, .partner-description-body .contact-author .soc-net, .contacts-block .soc-net {
   margin-top: 1.8rem;
 }
 .author-description-body .contact-author .soc-net li, .partner-description-body .contact-author .soc-net li {
@@ -1738,6 +1734,28 @@ input[type="checkbox"]:checked + label::before {
 }
 .search-results-body .padding-pagination {
   padding-left: 6rem;
+}
+.items-archive-block .item-archive:hover .hover-block {
+  display: flex;
+}
+.items-archive-block .item-archive .hover-block {
+  position: absolute;
+  width: 76%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  top: 0;
+  justify-content: center;
+  padding-top: 13px;
+  color: rgba(80, 80, 80, 0.8);
+  display: none;
+}
+.items-archive-block .item-archive .hover-block .plus-journal {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 31px;
+  font-weight: 200;
+  color: #174EE2;
 }
 @media (min-width: 319px) and (max-width: 413px) {
   .new-block::before {
